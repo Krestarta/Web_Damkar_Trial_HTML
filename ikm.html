@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,10 +5,11 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <link rel="icon" href="https://i.postimg.cc/1zzb34Jq/LOGO-DAMKAR.png">
-    <title>Dashboard - SB Admin - Trial</title>
+    <title>Index Kepuasan Masyarakat - SB Admin - Trial</title>
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <style>
         table,
@@ -28,12 +26,12 @@
 </head>
 
 <body class="sb-nav-fixed">
+    <!-- Navbar -->
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-primary">
         <div class="container-fluid"><img src="https://i.postimg.cc/1zzb34Jq/LOGO-DAMKAR.png" alt="logo damkar"
                 width="40px">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="index.html">Damkar
-                Banyuwangi</a>
+            <a class="navbar-brand ps-3" href="index.html">Damkar Banyuwangi</a>
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
                     class="fas fa-bars"></i></button>
@@ -47,7 +45,6 @@
                 </div>
             </form>
         </div>
-        <!-- Navbar-->
         <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
@@ -81,7 +78,7 @@
                         <!-- <div class="sb-sidenav-menu-heading">IKM</div> -->
                         <a class="nav-link" href="ikm.html">
                             <div class="sb-nav-link-icon"><i class="fas fa-regular fa-comments"></i></div>
-                            Index Kepuasan Masyarakat
+                            Indeks Kepuasan Masyarakat
                         </a>
                         <div class="sb-sidenav-menu-heading">Lainnya</div>
                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
@@ -95,7 +92,6 @@
                             <nav class="sb-sidenav-menu-nested nav">
                                 <a class="nav-link" href="berita.html">Berita</a>
                                 <a class="nav-link" href="regulasi.html">Regulasi</a>
-                                <a class="nav-link" href="pop_up.html">Nyoba po-up</a>
                             </nav>
                         </div>
                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
@@ -111,6 +107,11 @@
                                 <a class="nav-link" href="rekap_kejadian.html">Rekap Kejadian</a>
                             </nav>
                         </div>
+                        <!-- <a class="nav-link" href="tables.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Rekap Laporan
+                        </a> -->
+
                         <!-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages"
                             aria-expanded="false" aria-controls="collapsePages">
                             <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
@@ -160,10 +161,6 @@
                         <div class="collapse" id="collapsePages" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                <a class="nav-link" href="manage_user.html">
-                                    <div class="sb-nav-link-icon"><i class="fa-solid fa-users"></i></div>
-                                    Manage User
-                                </a>
                                 <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
                                     data-bs-target="#pagesCollapseAuth" aria-expanded="false"
                                     aria-controls="pagesCollapseAuth">
@@ -207,95 +204,46 @@
                 <div class="sb-sidenav-footer">
                     <div class="small" style="padding-bottom: 2%;">Logged out as:</div>
                     <div style="display: grid;place-items: center;">
-                        <a class="btn btn-light btn-sm" href="login.html"
-                            style="padding: 6px; padding-left: 15%; padding-right: 15%;color: blue;"> &nbsp;Logout</a>
+                        <a class="btn btn-light btn-sm" href="login.html" style="padding: 6px; padding-left: 15%; padding-right: 15%;color: blue;"> &nbsp;Logout</a>
                     </div>
                 </div>
             </nav>
         </div>
+
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid px-4">
-                    <h3 class="mt-4"><b>DASHBOARD ADMIN</b></h3>
+                    <h3 class="mt-4"> <b>INDEKS KEPUASAN MASYARAKAT</b></h3>
                     <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item active">Dashboard</li>
+                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                        <li class="breadcrumb-item active">Indeks Kepuasan Masyarakat</li>
                     </ol>
-                    <!-- <div class="row">
-                        <div class="col-xl-3 col-md-6">
-                            <div class="card bg-primary text-white mb-4">
-                                <div class="card-body">Primary Card</div>
-                                <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" href="#">View Details</a>
-                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6">
-                            <div class="card bg-warning text-white mb-4">
-                                <div class="card-body">Warning Card</div>
-                                <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" href="#">View Details</a>
-                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6">
-                            <div class="card bg-success text-white mb-4">
-                                <div class="card-body">Success Card</div>
-                                <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" href="#">View Details</a>
-                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6">
-                            <div class="card bg-danger text-white mb-4">
-                                <div class="card-body">Danger Card</div>
-                                <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" href="#">View Details</a>
-                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <div class="row">
-                        <div class="col-xl-6">
-                            <div class="card mb-4">
-                                <div class="card-header">
-                                    <i class="fas fa-chart-area me-1"></i>
-                                    Area Chart Example
-                                </div>
-                                <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6">
-                            <div class="card mb-4">
-                                <div class="card-header">
-                                    <i class="fas fa-chart-bar me-1"></i>
-                                    Bar Chart Example
-                                </div>
-                                <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div class="card mb-4">
                         <div class="col-sm-12">
-                            <div class="card-header">
-                                <div>
-                                    <i class="fa-solid fa-list-check"></i>
-                                    Laporan Masuk
+                            <div class="card-header" style="padding-bottom: 20px;">
+                                <div style="padding-top: 15px;">
+
+                                    <i class="fas fa-regular fa-comments me-1"></i>
+                                    <div style="float: right;padding-right: 30px;">
+                                        <a class="btn btn-success btn-sm"><i class="fa fa-plus"></i> &nbsp;Tambah</a>
+                                    </div>
+                                    Indeks Kepuasan Masyarakat
                                 </div>
                             </div>
                         </div>
                         <div class="card-body">
                             <table class="table table-striped">
+                                <!-- <table> -->
+                                <!-- <table id="datatablesSimple"> -->
                                 <thead>
                                     <tr>
-                                        <th>Nama Lengkap</th>
-                                        <th>Alamat Pelapor</th>
-                                        <th>Foto Kartu Identitas</th>
+                                        <th>Nama</th>
+                                        <th>Komentar</th>
+                                        <th>Aksi</th>
+                                        <!-- <th>Foto Kartu Identitas</th>
                                         <th>Foto Kejadian</th>
-                                        <th>Jenis Kejadian</th>
+                                        <th>Jenis Kejadian</th> -->
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -355,17 +303,6 @@
                                 <div class="btn">2</div>
                                 <div class="btn"><i class="fa-solid fa-angle-right"></i></div>
                                 <div class="btn"><i class="fa-solid fa-angles-right"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xl-6">
-                            <div class="card mb-4">
-                                <div class="card-header">
-                                    <i class="fa-solid fa-comment-dots"></i>
-                                    Komentar
-                                </div>
-                                <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
                             </div>
                         </div>
                     </div>

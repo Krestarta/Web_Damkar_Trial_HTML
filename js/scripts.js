@@ -24,3 +24,11 @@ window.addEventListener('DOMContentLoaded', event => {
     }
 
 });
+
+$(document).ready(function () {
+    $('select').selectize({
+        sortField: 'text'
+    });
+});
+
+
